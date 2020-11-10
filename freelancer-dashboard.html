@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="./js/custom.js"></script>
     </head>
     <body>
@@ -93,167 +93,375 @@
                 </div>
             </header>
             <!-- HEADER END -->
-
             <div class="container">
-                <div class="content-container cards-container mb-4">
-                    <div class="inner-container">
-                        <div class="main-content cards-list">
-                            <div class="single-card total-spend-card p-3">
-                                <h2>Total Spend</h2>
-                                <span class="card-number">$500</span>
-    
-                                <span class="card-date">Today 26 Oct, 2020</span>
-                            </div>
-    
-                            <div class="single-card work-in-progress-card p-3">
-                                <h2>Work In Progress</h2>
-                                <span class="card-number">$500</span>
-    
-                                <span class="card-date">Today 26 Oct, 2020</span>
+                <div class="content-container main-page">
+                    <div class="left-section">
+                        <div class="single-content-box mb-4">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item"><a class="nav-link active show" href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#funds" role="tab" data-toggle="tab">Funds</a></li>
+                            </ul>
+                              
+                            <!-- Tab panes -->
+                            <div class="tab-content pt-2">
+                                <div role="tabpanel" class="tab-pane fade active show profile-tab" id="profile">
+                                    <div class="user-detail mb-2 pl-3 pr-3">
+                                        <div class="profile-pic">
+                                            <img src="images/profile-pic.svg" alt="" />
+                                        </div>
+
+                                        <div class="user-name">
+                                            <h2>Apurba Das</h2>
+                                            <span><img src="images/top-rated-star.svg"> TOP RATED</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-completeness pl-3 pr-3 mb-2">
+                                        <p class="completeness-result">80% completed</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <p>Pass the US Engli - level 1 (+10%)</p>
+                                    </div>
+
+                                    <a href="#" class="view-profile pl-3 pr-3">
+                                        View Profile
+                                    </a>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane fade funds-tab pl-3 pr-3 pt-2 pb-2" id="funds">
+                                    Funds
+                                </div>
                             </div>
                         </div>
-    
-                        <div class="right-content">
-                            <div class="single-card project-complete-card p-3">
-                                <h2>Project Completed</h2>
-                                <span class="card-number">50</span>
-    
-                                <span class="card-date">Today 26 Oct, 2020</span>
+                        
+                        <div class="single-content-box mb-4">
+                            <div class="box-heading pl-3 pr-3">
+                                <h2>Membership</h2>
+                            </div>
+
+                            <div class="box-detail pl-3 pr-3 pt-2 pb-3">
+                                <p class="mb-4">Current membership</p>
+                                <p class="have-grid column-2 mb-3"><img src="images/logo.svg" alt="" /> <span class="plan-name">Basic</span></p>
+                                <button class="custom-button">Upgrade membership</button>
+                            </div>
+                        </div>
+
+                        <div class="single-content-box mb-4">
+                            <div class="box-heading pl-3 pr-3">
+                                <h2>Bid Credit</h2>
+                            </div>
+
+                            <div class="box-detail pl-3 pr-3 pt-2 pb-3">
+                                <p class="mb-3">Available Bids</p>
+
+                                <p class="mb-3 font-weight-bold">76</p>
+
+                                <button class="custom-button">Buy Proposal Credit</button>
                             </div>
                         </div>
                     </div>
-                </div>
-    
-                <div class="content-container">
-                    <div class="inner-container">
-                        <div class="main-content">
-                            <div class="single-content-box mb-4">
-                                <div class="box-heading columns-2 pl-4 pr-4">
-                                    <h2>Recent Projects</h2>
-                                    <span>3 projects found</span>
+
+                    <div class="middle-section">
+                        <div class="search-bar mb-4">
+                            <input type="search" placeholder="Search for project" />
+                            <img src="images/main-search-bar-icon.svg" alt="" />
+                        </div>
+
+                        <p class="job-count-result mb-3"><span>45000</span> Jobs found</p>
+
+                        <div class="jobs-list-container">
+                            <div class="single-job featured-job p-3 pl-4 pr-4 mb-4">
+                                <div class="job-heading mb-3">
+                                    <a href="#">Logo Designer Need</a>
+
+                                    <ul class="heading-cards">
+                                        <li class="nda-card">NDA</li>
+                                        <li class="featured-card">Featured</li>
+                                    </ul>
                                 </div>
-    
-                                <div class="box-detail">
-                                    <div class="conent-box-row pl-4 pr-4 pt-3 pb-3">
-                                        <div class="row-heading row-data">
-                                            <a href="#">I need a logo designer</a>
-    
-                                            <p>30 <span>(6 New)</span></p>
-    
-                                            <p>1</p>
-    
-                                            <p class="price-column">$200.00 USD</p>
-                                        </div>
-    
-                                        <div class="row-detail row-data">
-                                            <span>Fixed- Posted 3days ago</span>
-    
-                                            <span>Proposal</span>
-    
-                                            <span>Hired</span>
-    
-                                            <span class="price-column">In Progress</span>
-                                        </div>
+
+                                <div class="job-content-detail pb-3">
+                                    <div class="job-description">
+                                        <p class="mb-4">
+                                            Greg is a product strategy consultant and trainer with nearly 20 years of experience shipping digital enterprise products at IBM, 
+                                            Microsoft, and products and enterprise scale. <a href="#" class="view-more">View More</a>
+                                        </p>
+
+                                        <ul class="job-cat">
+                                            <li>Adobe Illustrator</li>
+                                            <li>Adobe Photoshop</li>
+                                            <li>Logo Design</li>
+                                        </ul>
                                     </div>
-    
-                                    <div class="conent-box-row pl-4 pr-4 pt-3 pb-3">
-                                        <div class="row-heading row-data">
-                                            <a href="#">I need a logo designer</a>
-    
-                                            <p>30 <span>(6 New)</span></p>
-    
-                                            <p>1</p>
-    
-                                            <p class="price-column">$200.00 USD</p>
+
+                                    <div class="job-type-detail">
+                                        <div class="price-type">
+                                            <p class="price mb-2">$500 USD</p>
+                                            <p class="type">FIXED</p>
                                         </div>
-    
-                                        <div class="row-detail row-data">
-                                            <span>Fixed- Posted 3days ago</span>
-    
-                                            <span>Proposal</span>
-    
-                                            <span>Hired</span>
-    
-                                            <span class="price-column">In Progress</span>
-                                        </div>
+                                        <p class="job-timing">Posted 5 minutes ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="buyer-detail pt-3">
+                                    <div class="item">
+                                        <div class="icon"><img src="images/clock-icon.svg" alt="" /></div>
+                                        <p>
+                                            Apply Before 
+                                            <span>1 days 2hours</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="icon"><img src="images/dollar-icon.svg" alt="" /></div>
+                                        <p>
+                                            Payment Method 
+                                            <span>Varified</span>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="icon"><img src="images/start-icon.svg" alt="" /></div>
+                                        <p>
+                                            0 Reviews
+                                            <span class="reviews-list">
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="icon"><img src="images/location-icon.svg" alt="" /></div>
+                                        <p>
+                                            Buyer Country
+                                            <span class="country">United State</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="item saved-column">
+                                        <p>Saved</p>
+                                        <div class="icon"><img src="images/heart-icon.svg" alt="" /></div>
+                                        <!-- <p>
+                                            Apply Before 
+                                            <span>1 days 2hours</span>
+                                        </p> -->
                                     </div>
                                 </div>
                             </div>
-    
-                            <div class="single-content-box mb-4">
-                                <div class="box-heading columns-2 pl-4 pr-4">
-                                    <h2>Draft Projects</h2>
-                                    <span>0 projects found</span>
+
+                            <div class="single-job p-3 pl-4 pr-4 mb-4">
+                                <div class="job-heading mb-3">
+                                    <a href="#">Logo Designer Need</a>
+
+                                    <ul class="heading-cards">
+                                        <li class="nda-card">NDA</li>
+                                        <li class="urgent-card">Urgent</li>
+                                    </ul>
                                 </div>
-    
-                                <div class="box-detail">
-                                    <div class="no-record-found">
-                                        <img src="images/empty-img.svg" alt="" />
-                                        <h2>No draft project Found</h2>
-                                        <p>You did not save any project as draft</p>
+
+                                <div class="job-content-detail pb-3">
+                                    <div class="job-description">
+                                        <p class="mb-4">
+                                            Greg is a product strategy consultant and trainer with nearly 20 years of experience shipping digital enterprise products at IBM, 
+                                            Microsoft, and products and enterprise scale. <a href="#" class="view-more">View More</a>
+                                        </p>
+
+                                        <ul class="job-cat">
+                                            <li>Adobe Illustrator</li>
+                                            <li>Adobe Photoshop</li>
+                                            <li>Logo Design</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="job-type-detail">
+                                        <div class="price-type">
+                                            <p class="price mb-2">$500 USD</p>
+                                            <p class="type">FIXED</p>
+                                        </div>
+                                        <p class="job-timing">Posted 5 minutes ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="buyer-detail pt-3">
+                                    <div class="item">
+                                        <div class="icon"><img src="images/clock-icon.svg" alt="" /></div>
+                                        <p>
+                                            Apply Before 
+                                            <span>1 days 2hours</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="icon"><img src="images/dollar-icon.svg" alt="" /></div>
+                                        <p>
+                                            Payment Method 
+                                            <span>Varified</span>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="icon"><img src="images/start-icon.svg" alt="" /></div>
+                                        <p>
+                                            0 Reviews
+                                            <span class="reviews-list">
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="icon"><img src="images/location-icon.svg" alt="" /></div>
+                                        <p>
+                                            Buyer Country
+                                            <span class="country">United State</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="item saved-column">
+                                        <p>Saved</p>
+                                        <div class="icon"><img src="images/heart-icon.svg" alt="" /></div>
+                                        <!-- <p>
+                                            Apply Before 
+                                            <span>1 days 2hours</span>
+                                        </p> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-job p-3 pl-4 pr-4 mb-4">
+                                <div class="job-heading mb-3">
+                                    <a href="#">Logo Designer Need</a>
+
+                                    <ul class="heading-cards">
+                                        <li class="nda-card">NDA</li>
+                                        <li class="long-term-card">Long Term</li>
+                                    </ul>
+                                </div>
+
+                                <div class="job-content-detail pb-3">
+                                    <div class="job-description">
+                                        <p class="mb-4">
+                                            Greg is a product strategy consultant and trainer with nearly 20 years of experience shipping digital enterprise products at IBM, 
+                                            Microsoft, and products and enterprise scale. <a href="#" class="view-more">View More</a>
+                                        </p>
+
+                                        <ul class="job-cat">
+                                            <li>Adobe Illustrator</li>
+                                            <li>Adobe Photoshop</li>
+                                            <li>Logo Design</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="job-type-detail">
+                                        <div class="price-type">
+                                            <p class="price mb-2">$500 USD</p>
+                                            <p class="type">FIXED</p>
+                                        </div>
+                                        <p class="job-timing">Posted 5 minutes ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="buyer-detail pt-3">
+                                    <div class="item">
+                                        <div class="icon"><img src="images/clock-icon.svg" alt="" /></div>
+                                        <p>
+                                            Apply Before 
+                                            <span>1 days 2hours</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="icon"><img src="images/dollar-icon.svg" alt="" /></div>
+                                        <p>
+                                            Payment Method 
+                                            <span>Varified</span>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="icon"><img src="images/start-icon.svg" alt="" /></div>
+                                        <p>
+                                            0 Reviews
+                                            <span class="reviews-list">
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                                <span><img src="images/start-icon.svg" alt="" /></span>
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="icon"><img src="images/location-icon.svg" alt="" /></div>
+                                        <p>
+                                            Buyer Country
+                                            <span class="country">United State</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="item saved-column">
+                                        <p>Saved</p>
+                                        <div class="icon"><img src="images/heart-icon.svg" alt="" /></div>
+                                        <!-- <p>
+                                            Apply Before 
+                                            <span>1 days 2hours</span>
+                                        </p> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="right-content">
-                            <ul class="buttons-list">
-                                <li class="active"><a href="#">Post a Project</a></li>
-                                <li><a href="#">Repeat Hire</a></li>
+
+                        <nav class="navigation-nav d-flex justify-content-center mb-4" aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
                             </ul>
-    
-                            <div class="single-content-box mb-4">
-                                <div class="box-heading pl-4 pr-4">
-                                    <h2>COVID-19</h2>
-                                </div>
-    
-                                <div class="box-detail pl-4 pr-4 pt-3 pt-3 pb-4">
-                                    <p>
-                                        See how other businesses are connecting with experts to adjust in these uncertain times. 
-                                        Choose a job template to quickly fill projects you need now.
-                                    </p>
-                                </div>
-                            </div>
-    
-                            <div class="single-content-box mb-4">
-                                <div class="box-heading pl-4 pr-4">
-                                    <h2>Recent Completed</h2>
-                                </div>
-    
-                                <div class="box-detail pl-4 pr-4 pt-3 pt-3">
-                                    <div class="conent-box-row pb-3 mb-3">
-                                        <a href="#">I need a logo designer</a>
-                                        <p>Fixed- 3days ago- <span class="status">Completed</span></p>
-                                        <span class="price">$200.00 USD</span>
-                                    </div>
-    
-                                    <div class="conent-box-row pb-3 mb-3">
-                                        <a href="#">I need a logo designer</a>
-                                        <p>Fixed- 3days ago- <span class="status">Completed</span></p>
-                                        <span class="price">$200.00 USD</span>
-                                    </div>
-    
-                                    <div class="conent-box-row pb-3 mb-3">
-                                        <a href="#">I need a logo designer</a>
-                                        <p>Fixed- 3days ago- <span class="status">Completed</span></p>
-                                        <span class="price">$200.00 USD</span>
-                                    </div>
-    
-                                    <div class="conent-box-row pb-3 mb-3">
-                                        <a href="#">I need a logo designer</a>
-                                        <p>Fixed- 3days ago- <span class="status">Completed</span></p>
-                                        <span class="price">$200.00 USD</span>
-                                    </div>
-    
-                                    <div class="conent-box-row pb-3 mb-3">
-                                        <a href="#">I need a logo designer</a>
-                                        <p>Fixed- 3days ago- <span class="status">Completed</span></p>
-                                        <span class="price">$200.00 USD</span>
-                                    </div>
-                                </div>
-    
-                                <button class="custom-button">View all projects</button>
-                            </div>
+                        </nav>
+
+                        <button class="custom-button load-more-jobs">Load More</button>
+                    </div>
+                    
+                    <div class="right-section">
+                        <div class="filter-section">
+                            <h2 class="mb-3">Select category</h2>
+                            <ul>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> All</label></li>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> Website Development</label></li>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> Graphic Design</label></li>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> Digital Marketing</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-section">
+                            <h2 class="mb-3">Select Sub-category</h2>
+                            <ul>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> All</label></li>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> Website Development</label></li>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> Graphic Design</label></li>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> Digital Marketing</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-section">
+                            <h2 class="mb-3">Project Type</h2>
+                            <ul>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> Any</label></li>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> Fixed Price</label></li>
+                                <li class="mb-3"><label><input type="checkbox" /><span class="check-box"><i class="fa fa-check"></i></span> Hourly</label></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
