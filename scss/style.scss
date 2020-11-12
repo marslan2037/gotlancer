@@ -138,9 +138,30 @@ a {
         font-family: MyriadPro-Regular;
     }
 
-    
+    .profile-completeness {
+        p.completeness-result {
+            color: #74B95C;
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 600;
+            margin: 0 0 3px;
+        }
+        p {
+            font-size: 12px;
+            line-height: 15px;
+            color: #314963;
+        }
+        .progress {
+            margin: 0 0 3px;
+            height: 6px;
+            .progress-bar {
+                background-color: #74B95C;
+            }
+        }
+    }
+
     .small-box-cards {
-        li {
+        li, a {
             color: #fff;
             padding: 0 8px;
             height: 23px;
@@ -167,6 +188,9 @@ a {
         }
         li.pt-green-card {
             background-color: #74B95C;
+        }
+        li.pt-gray-card {
+            background-color: #E3EAF4;
         }
     }
 
@@ -729,27 +753,7 @@ a {
                         }
                     }
                 }
-                .profile-completeness {
-                    p.completeness-result {
-                        color: #74B95C;
-                        font-size: 12px;
-                        line-height: 14px;
-                        font-weight: 600;
-                        margin: 0 0 3px;
-                    }
-                    p {
-                        font-size: 12px;
-                        line-height: 15px;
-                        color: #314963;
-                    }
-                    .progress {
-                        margin: 0 0 3px;
-                        height: 6px;
-                        .progress-bar {
-                            background-color: #74B95C;
-                        }
-                    }
-                }
+                
                 a.view-profile {
                     color: #314963;
                     font-size: 14px;
@@ -1101,6 +1105,7 @@ a {
                                 top: 0;
                             }
                         }
+                        
                         p {
                             color: #8CA2BB;
                             font-size: 14px;
@@ -1125,7 +1130,12 @@ a {
                             align-self: end;
                             @media (min-width: 320px) and (max-width: 767px) {
                                 align-self: start;
-                            }
+                            }    
+                        }
+                        p.completeness-result {
+                            font-size: 12px;
+                            line-height: 14.4px;
+                            font-weight: 400;
                         }
                     }
                 }
@@ -1165,6 +1175,9 @@ a {
                             span {
                                 color: #74B95C;
                             }
+                            span.c-black {
+                                color: #314963;
+                            }
                             span.country {
                                 color: #314963;
                                 font-weight: 600;
@@ -1199,6 +1212,28 @@ a {
             @media (min-width: 320px) and (max-width: 767px) {
                 display: none;
             }
+            ul.bids-buyer-menu { 
+                display: grid;
+                grid-gap: 41px;
+                    li {
+                        list-style-type: none;
+                        img{
+                            margin-right: 15.68px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #485E76;
+                            display: grid;
+                            grid-template-columns: 20px 1fr;
+                            grid-gap: 16px;
+                            align-items: center;
+                            font-size: 13px;
+                            line-height: 15.6px;
+                            font-weight: 500;
+                        }
+                    }
+              
+            } 
         }
 
         .right-section {
@@ -1233,6 +1268,12 @@ a {
         @media (min-width: 768px) and (max-width: 991px) {
             grid-template-columns: 200px 1fr;
         }
+    }
+    .content-container.main-page.only-left-section {
+        grid-template-columns: 231px 1fr;
+    }
+    .content-container.main-page.only-right-section {
+        grid-template-columns: 1fr 170px;
     }
 
     .messages-container {
@@ -2001,3 +2042,4 @@ a {
         }
     }
 }
+
