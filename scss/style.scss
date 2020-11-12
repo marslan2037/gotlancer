@@ -138,7 +138,92 @@ a {
         font-family: MyriadPro-Regular;
     }
 
+    
+    .small-box-cards {
+        li {
+            color: #fff;
+            padding: 0 8px;
+            height: 23px;
+            border-radius: 2px;
+            display: inline-block;
+            list-style: none;
+            margin-right: 10px;
+            text-transform: uppercase;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        li.pt-blue-card {
+            background-color: #485E76;
+        }
+        li.pt-yellow-card {
+            background-color: #EDB742;
+        }
+        li.pt-light-blue-card {
+            background-color: #8CA2BB;
+        }
+        li.pt-red-card {
+            background-color: #DE5151;
+        }
+        li.pt-green-card {
+            background-color: #74B95C;
+        }
+    }
+
+    
+    label.have-custom-checkbox {
+        display: block;
+        color: #485E76;
+        font-size: 12.45px;
+        line-height: 15px;
+        padding-left: 28px;
+        cursor: pointer;
+        span.check-box {
+            position: absolute;
+            left: 0;
+            width: 17px;
+            height: 17px;
+            border: 0.5px solid #CCCCCC;
+            border-radius: 3px 2px 2px 3px;
+            background: #fff;
+            i.fa {
+                display: none;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                color: #fff;
+            }
+        }
+        input {
+            display: none;
+        }
+        input:checked + span.check-box {
+            background: #74B95C;
+            i.fa {
+                display: block;
+            }
+        }
+    }
+
+    .project-name-detail {
+        h2 {
+            font-size: 18px;
+            color: #3F4254;
+            line-height: 21.6px;
+        }
+        a {
+            font-size: 16px;
+            line-height: 19.2px;
+            color: #74B95C;
+            font-weight: 600;
+        }
+    }
+
     .container {
+        padding: 0;
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding: 0 12px;
+        }
         @media (min-width: 320px) and (max-width: 991px) {
             max-width: 100%;
         }
@@ -852,18 +937,7 @@ a {
                 }
             }
         }
-    }
-    
-    .content-container.main-page {
-        display: grid;
-        grid-template-columns: 231px 1fr 170px;
-        grid-gap: 20px;
-        @media (min-width: 320px) and (max-width: 767px) {
-            grid-template-columns: 1fr;
-        }
-        @media (min-width: 768px) and (max-width: 991px) {
-            grid-template-columns: 200px 1fr;
-        }
+        
         button.custom-button {
             margin: 0;
             color: #314963;
@@ -966,36 +1040,6 @@ a {
                         font-size: 18px;
                         line-height: 21.6px;
                         font-weight: 600;
-                    }
-                    .heading-cards {
-                        li {
-                            color: #fff;
-                            padding: 0 8px;
-                            height: 23px;
-                            border-radius: 2px;
-                            display: inline-block;
-                            list-style: none;
-                            margin-right: 10px;
-                            text-transform: uppercase;
-                            &:last-child {
-                                margin: 0;
-                            }
-                        }
-                        li.nda-card {
-                            background-color: #485E76;
-                        }
-                        li.featured-card {
-                            background-color: #EDB742;
-                        }
-                        li.top-project {
-                            background-color: #8CA2BB;
-                        }
-                        li.urgent-card {
-                            background-color: #DE5151;
-                        }
-                        li.long-term-card {
-                            background-color: #74B95C;
-                        }
                     }
                 }
                 .job-content-detail {
@@ -1173,41 +1217,21 @@ a {
                     li {
                         position: relative;
                         list-style: none;
-                        label {
-                            display: block;
-                            color: #485E76;
-                            font-size: 12.45px;
-                            line-height: 15px;
-                            padding-left: 28px;
-                            span.check-box {
-                                position: absolute;
-                                left: 0;
-                                width: 17px;
-                                height: 17px;
-                                border: 0.5px solid #CCCCCC;
-                                border-radius: 3px 2px 2px 3px;
-                                background: #fff;
-                                i.fa {
-                                    display: none;
-                                    position: absolute;
-                                    top: 2px;
-                                    left: 2px;
-                                    color: #fff;
-                                }
-                            }
-                            input {
-                                display: none;
-                            }
-                            input:checked + span.check-box {
-                                background: #74B95C;
-                                i.fa {
-                                    display: block;
-                                }
-                            }
-                        }
                     }
                 }
             }
+        }
+    }
+    
+    .content-container.main-page {
+        display: grid;
+        grid-template-columns: 231px 1fr 170px;
+        grid-gap: 30px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            grid-template-columns: 200px 1fr;
         }
     }
 
