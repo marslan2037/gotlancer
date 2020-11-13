@@ -15,7 +15,8 @@ $(document).ready(function() {
     })
 
     $(".mobile-menu-close-button").on("click", function() {
-        var parent_element = $(this).parent();
+        var parent_element = $(this).parent().parent();
+        console.log(parent_element)
         parent_element.removeClass("have-mobile-menu-open");
     })
 
