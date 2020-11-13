@@ -333,6 +333,9 @@ a {
         .main-container header .left-header {
           grid-template-columns: 23px 95px;
           grid-gap: 12px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .main-container header .left-header {
+          grid-template-columns: 23px 95px auto; } }
     .main-container header .right-header {
       display: grid;
       grid-template-columns: 75px 25px auto;
@@ -421,7 +424,7 @@ a {
     .main-container header .search-bar {
       position: relative;
       width: 100%; }
-      @media (min-width: 320px) and (max-width: 991px) {
+      @media (min-width: 320px) and (max-width: 767px) {
         .main-container header .search-bar {
           display: none; } }
       .main-container header .search-bar span {
