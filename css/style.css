@@ -39,6 +39,10 @@ a {
   a:hover {
     text-decoration: none; }
 
+.rotate-reverse {
+  transform: rotate(180deg) !important;
+  color: #74B95C; }
+
 .force-display {
   display: block !important; }
 
@@ -331,8 +335,8 @@ a {
       align-items: center; }
       @media (min-width: 320px) and (max-width: 767px) {
         .main-container header .left-header {
-          grid-template-columns: 23px 95px;
-          grid-gap: 12px; } }
+          grid-template-columns: 1fr;
+          grid-gap: 0; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .main-container header .left-header {
           grid-template-columns: 23px 95px auto; } }
@@ -395,8 +399,8 @@ a {
       @media (min-width: 320px) and (max-width: 991px) {
         .main-container header .logo {
           justify-self: center;
-          width: 95px;
-          height: 25px; } }
+          width: 130px;
+          height: 32px; } }
       .main-container header .logo a {
         height: 33px;
         display: block;
@@ -405,7 +409,7 @@ a {
         @media (min-width: 320px) and (max-width: 991px) {
           .main-container header .logo a {
             background-size: contain;
-            height: 25px; } }
+            height: 32px; } }
     .main-container header .mobile-search-button {
       display: none; }
       @media (min-width: 320px) and (max-width: 991px) {
@@ -448,6 +452,48 @@ a {
         border-radius: 4px; }
         .main-container header .search-bar input[type="search"]::placeholder {
           color: #CED8E1; }
+      .main-container header .search-bar .search-dropdown {
+        padding: 0; }
+        .main-container header .search-bar .search-dropdown .dropdown-header {
+          background: #E3EAF4;
+          font-size: .625rem;
+          font-weight: 300;
+          padding: 8px 12px;
+          color: #6c757d;
+          white-space: nowrap; }
+          .main-container header .search-bar .search-dropdown .dropdown-header:first-child {
+            border-radius: 5px 5px 0 0; }
+          .main-container header .search-bar .search-dropdown .dropdown-header:after {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -4px;
+            width: 10px;
+            height: 10px;
+            background: #E3EAF4;
+            content: "";
+            margin: 0 auto;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+        .main-container header .search-bar .search-dropdown .search-dropdown-item {
+          padding: 12px;
+          font-size: .8125rem;
+          font-weight: 300; }
+          .main-container header .search-bar .search-dropdown .search-dropdown-item a {
+            color: #8CA2BB; }
+          .main-container header .search-bar .search-dropdown .search-dropdown-item span {
+            position: initial;
+            transform: initial; }
+          .main-container header .search-bar .search-dropdown .search-dropdown-item span.standout {
+            color: #74B95C; }
+          .main-container header .search-bar .search-dropdown .search-dropdown-item .helper {
+            color: #8CA2BB;
+            display: block;
+            font-size: .625rem;
+            margin-top: 5px; }
+        .main-container header .search-bar .search-dropdown .search-dropdown-item.offers {
+          border-bottom: 1px solid #E7ECF2; }
     .main-container header ul li {
       position: relative;
       display: inline-block;
@@ -571,10 +617,14 @@ a {
           padding: 0;
           box-shadow: initial;
           width: 100%;
-          border: 0; } }
+          border: 0;
+          display: none; } }
       @media (min-width: 320px) and (max-width: 991px) {
         .main-container header .quick-menu ul li ul li {
           border: none; } }
+      @media (min-width: 320px) and (max-width: 991px) {
+        .main-container header .quick-menu ul li ul.have-dropdown-open {
+          display: block; } }
     .main-container header ul li {
       position: relative; }
       .main-container header ul li span.message-count {
@@ -640,6 +690,68 @@ a {
           @media (min-width: 320px) and (max-width: 991px) {
             .main-container header .user-detail-dropdown .user-detail span.user-type {
               display: none; } }
+      .main-container header .user-detail-dropdown .dropdown-menu {
+        top: 8px !important;
+        left: initial !important;
+        right: 0 !important;
+        width: 202px !important; }
+        @media (min-width: 320px) and (max-width: 991px) {
+          .main-container header .user-detail-dropdown .dropdown-menu {
+            display: none; } }
+        .main-container header .user-detail-dropdown .dropdown-menu ul li {
+          margin: 0;
+          display: block; }
+          .main-container header .user-detail-dropdown .dropdown-menu ul li:hover a {
+            background-color: #F2F5FA;
+            color: #74B95C !important; }
+          .main-container header .user-detail-dropdown .dropdown-menu ul li a {
+            display: block;
+            padding: 0 16px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 35px;
+            color: #314963 !important; }
+            .main-container header .user-detail-dropdown .dropdown-menu ul li a img {
+              margin-right: 10px; }
+    .main-container header .user-status {
+      border-top: 1px solid #E3EAF4;
+      padding: 18px 10px 15px;
+      margin-top: 8px; }
+      @media (min-width: 320px) and (max-width: 991px) {
+        .main-container header .user-status {
+          margin: 0;
+          border: none;
+          text-align: left;
+          padding: 20px 25px; } }
+      .main-container header .user-status button {
+        position: relative;
+        cursor: pointer;
+        border: 0;
+        background-color: #ADBDCD;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 4px;
+        width: 86px;
+        height: 31px;
+        padding: 0 25px 0 0;
+        position: relative;
+        line-height: 32px; }
+        @media (min-width: 320px) and (max-width: 991px) {
+          .main-container header .user-status button {
+            margin: 0 10px 0 0;
+            width: 115px;
+            height: 38px; } }
+        .main-container header .user-status button img {
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          right: 8px; }
+          @media (min-width: 320px) and (max-width: 991px) {
+            .main-container header .user-status button img {
+              right: 10px; } }
+      .main-container header .user-status button.active-btn {
+        background: #6FB556; }
   .main-container .content-container .single-card {
     border-radius: 9px;
     height: 220px;
