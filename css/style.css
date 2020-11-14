@@ -82,7 +82,8 @@ a {
 
 .main-container {
   max-width: 1920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 96px; }
   @media (min-width: 320px) and (max-width: 767px) {
     .main-container {
       overflow: hidden; } }
@@ -300,7 +301,6 @@ a {
     height: 66px;
     box-shadow: 0px 0px 3px #00000059;
     margin: 0 0 29.67px;
-    position: relative;
     background: #fff;
     /* DISPLAY ONLY SEARCH BAR FOR MOBILE */
     /* DISPLAY ONLY SEARCH BAR FOR MOBILE */
@@ -339,7 +339,7 @@ a {
           grid-gap: 0; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .main-container header .left-header {
-          grid-template-columns: 23px 95px auto; } }
+          grid-template-columns: 135px auto; } }
     .main-container header .right-header {
       display: grid;
       grid-template-columns: 75px 25px auto;
