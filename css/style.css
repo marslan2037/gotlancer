@@ -88,6 +88,9 @@ a {
     .main-container {
       overflow: hidden;
       padding-top: 60px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .main-container {
+      padding-top: 70px; } }
   .main-container .inner-container {
     max-width: 1161px;
     margin: 0 auto; }
@@ -279,18 +282,28 @@ a {
       background: #74B95C; }
       .main-container label.have-custom-checkbox input:checked + span.check-box i.fa {
         display: block; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .main-container .project-name-detail {
+      padding: 12px 0;
+      grid-gap: 15px;
+      position: relative;
+      top: 65px; } }
   .main-container .project-name-detail h2 {
     font-size: 18px;
     color: #3F4254;
     line-height: 21.6px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container .project-name-detail h2 {
+        font-size: 15px;
+        line-height: 22px; } }
   .main-container .project-name-detail a {
     font-size: 16px;
     line-height: 19.2px;
     color: #74B95C;
     font-weight: 600; }
-  @media (min-width: 320px) and (max-width: 767px) {
-    .main-container .project-name-detail {
-      display: none !important; } }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container .project-name-detail a {
+        width: 135px; } }
   .main-container .container {
     padding: 0; }
     @media (min-width: 320px) and (max-width: 767px) {
@@ -1446,7 +1459,10 @@ a {
       margin-left: -12px;
       margin-right: -12px;
       padding: 12px;
-      background-color: #f2f6f7; } }
+      background-color: #f2f6f7;
+      position: absolute;
+      top: 60px;
+      width: 100%; } }
   .main-container .content-container .left-section.have-bids-page-menu ul {
     position: relative; }
     @media (min-width: 320px) and (max-width: 767px) {
@@ -1560,7 +1576,8 @@ a {
     grid-template-columns: 248px 1fr; }
     @media (min-width: 320px) and (max-width: 767px) {
       .main-container .content-container.main-page.only-left-section {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: 1fr;
+        padding: 55px 0 0; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .main-container .content-container.main-page.only-left-section {
         grid-template-columns: 200px 1fr; } }
