@@ -2018,6 +2018,7 @@ a {
         grid-gap: 30px;
         @media (min-width: 320px) and (max-width: 767px) {
             grid-template-columns: 1fr;
+            padding: 10px 0 0px;
         }
         @media (min-width: 768px) and (max-width: 991px) {
             grid-template-columns: 200px 1fr;
