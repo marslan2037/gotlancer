@@ -87,7 +87,7 @@ a {
   @media (min-width: 320px) and (max-width: 767px) {
     .main-container {
       overflow: hidden;
-      padding-top: 60px; } }
+      padding-top: 70px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .main-container {
       padding-top: 70px; } }
@@ -1562,13 +1562,115 @@ a {
     .main-container .content-container .right-section .filter-section ul li {
       position: relative;
       list-style: none; }
+  .main-container .notification-container {
+    box-shadow: 0px 0px 3px #00000059;
+    background-color: #fff;
+    margin-bottom: 100px;
+    border-radius: 4px; }
+    .main-container .notification-container .notification-heading {
+      padding: 1rem 2.5rem !important;
+      border-bottom: 1px solid #E3EAF4; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .notification-container .notification-heading {
+          padding: 1rem !important; } }
+      .main-container .notification-container .notification-heading div {
+        display: grid;
+        grid-template-columns: 20px 135px 49px 22px;
+        grid-gap: 9px; }
+      .main-container .notification-container .notification-heading h2 {
+        font-size: 21px;
+        font-weight: 600; }
+      .main-container .notification-container .notification-heading span {
+        display: grid;
+        align-items: center;
+        justify-items: center; }
+      .main-container .notification-container .notification-heading span.trash-icon {
+        width: 22px;
+        height: 22px;
+        border-radius: 4px;
+        background-color: #F76161;
+        cursor: pointer; }
+      .main-container .notification-container .notification-heading span.notification-count {
+        width: 49px;
+        height: 25px;
+        background-color: #C3D1DB;
+        border-radius: 50%;
+        font-size: 15px;
+        color: #5E6D7A;
+        font-weight: 400;
+        padding: 0 10px;
+        line-height: 18px;
+        border-radius: 12px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .main-container .notification-container .notification-content {
+        margin: 0 !important; } }
+    .main-container .notification-container .notification-content .single-notification {
+      position: relative;
+      border-bottom: 1px solid #E3EAF4;
+      display: grid;
+      grid-template-columns: 15px auto 28px;
+      align-items: center;
+      grid-gap: 15px; }
+      .main-container .notification-container .notification-content .single-notification .have-custom-checkbox {
+        margin: 0;
+        height: 15px;
+        padding: 0; }
+        .main-container .notification-container .notification-content .single-notification .have-custom-checkbox span {
+          left: 15px; }
+      .main-container .notification-container .notification-content .single-notification span.close-button {
+        background: #F2F5FA;
+        width: 28px;
+        height: 28px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border-radius: 4px;
+        cursor: pointer; }
+        .main-container .notification-container .notification-content .single-notification span.close-button:hover {
+          background-color: #F76161; }
+          .main-container .notification-container .notification-content .single-notification span.close-button:hover i.fa {
+            color: #fff; }
+        .main-container .notification-container .notification-content .single-notification span.close-button i.fa {
+          color: #617384; }
+      .main-container .notification-container .notification-content .single-notification h2, .main-container .notification-container .notification-content .single-notification p, .main-container .notification-container .notification-content .single-notification span {
+        color: #314963; }
+      .main-container .notification-container .notification-content .single-notification h2 {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        margin: 0 0 2px; }
+        .main-container .notification-container .notification-content .single-notification h2 a {
+          text-decoration: none;
+          color: #74B95C;
+          font-size: inherit;
+          font-weight: inherit; }
+      .main-container .notification-container .notification-content .single-notification p {
+        line-height: 16px;
+        font-size: 13px; }
+      .main-container .notification-container .notification-content .single-notification span {
+        font-size: 12px; }
+    .main-container .notification-container button.load-button {
+      width: 158px;
+      height: 46px;
+      background-color: #E7ECF2;
+      text-align: center;
+      line-height: 46px;
+      border: none;
+      border-radius: 30px;
+      /* display: grid; */
+      margin: 0 auto;
+      display: block;
+      font-weight: 500; }
+      .main-container .notification-container button.load-button:hover {
+        background-color: #d1d8e0; }
   .main-container .content-container.main-page {
     display: grid;
     grid-template-columns: 231px 1fr 170px;
     grid-gap: 30px; }
     @media (min-width: 320px) and (max-width: 767px) {
       .main-container .content-container.main-page {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: 1fr;
+        padding: 10px 0 0px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .main-container .content-container.main-page {
         grid-template-columns: 200px 1fr; } }

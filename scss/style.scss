@@ -107,7 +107,7 @@ a {
     padding-top: 96px;
     @media (min-width: 320px) and (max-width: 767px) {
         overflow: hidden;
-        padding-top: 60px;
+        padding-top: 70px;
     }
     @media (min-width: 768px) and (max-width: 991px) {
         padding-top: 70px;
@@ -2008,6 +2008,132 @@ a {
                         list-style: none;
                     }
                 }
+            }
+        }
+    }
+
+    .notification-container {
+        box-shadow: 0px 0px 3px #00000059;
+        background-color: #fff;
+        margin-bottom: 100px;
+        border-radius: 4px;
+        .notification-heading {
+            padding: 1rem 2.5rem !important;
+            border-bottom: 1px solid #E3EAF4;
+            @media (min-width: 320px) and (max-width: 767px) {
+                padding: 1rem !important;
+            }
+            div {
+                display: grid;
+                grid-template-columns: 20px 135px 49px 22px;
+                grid-gap: 9px;
+            }
+            h2 {
+                font-size: 21px;
+                font-weight: 600;
+            }
+            span {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+
+            }
+            span.trash-icon {
+                width: 22px;
+                height: 22px;
+                border-radius: 4px;
+                background-color: #F76161;
+                cursor: pointer;
+            }
+            span.notification-count {
+                width: 49px;
+                height: 25px;
+                background-color: #C3D1DB;
+                border-radius: 50%;
+                font-size: 15px;
+                color: #5E6D7A;
+                font-weight: 400;
+                padding: 0 10px;
+                line-height: 18px;
+                border-radius: 12px;
+            }
+        }
+        .notification-content {
+            @media (min-width: 320px) and (max-width: 767px) {
+                margin: 0 !important;
+            }
+            .single-notification {
+                position: relative;
+                border-bottom: 1px solid #E3EAF4;
+                display: grid;
+                grid-template-columns: 15px auto 28px;
+                align-items: center;
+                grid-gap: 15px;
+                .have-custom-checkbox {
+                    margin: 0;
+                    height: 15px;
+                    padding: 0;
+                    span {
+                        left: 15px;
+                    }
+                }
+                span.close-button {
+                    background: #F2F5FA;
+                    width: 28px;
+                    height: 28px;
+                    display: grid;
+                    align-items: center;
+                    justify-items: center;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #F76161;
+                        i.fa {
+                            color: #fff;
+                        }
+                    }
+                    i.fa {
+                        color: #617384;
+                    }
+                }
+                h2, p, span {
+                    color: #314963;
+                }
+                h2 {
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    margin: 0 0 2px;
+                    a {
+                        text-decoration: none;
+                        color: #74B95C;
+                        font-size: inherit;
+                        font-weight: inherit;
+                    }
+                }
+                p {
+                    line-height: 16px;
+                    font-size: 13px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+        button.load-button {
+            width: 158px;
+            height: 46px;
+            background-color: #E7ECF2;
+            text-align: center;
+            line-height: 46px;
+            border: none;
+            border-radius: 30px;
+            /* display: grid; */
+            margin: 0 auto;
+            display: block;
+            font-weight: 500;
+            &:hover {
+                background-color: #d1d8e0;
             }
         }
     }
