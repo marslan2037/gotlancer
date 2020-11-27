@@ -1,0 +1,406 @@
+<html>
+    <head>
+        <title>Gotlancer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/nice-select.css">
+        <link rel="stylesheet" href="css/custom-bs.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        
+        <!--Plugins-->
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/aos.js"></script>
+
+        <script src="js/custom.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <!-- HEADER START -->
+            <header class="fixed-top">
+                <div class="container">
+                    <div class="inner-container">
+                        <div class="left-header">
+                            <h2 class="logo">
+                                <a href="/">GotLancer</a>
+                            </h2>
+                            
+                            <div class="quick-menu">
+                                <!-- MOBILE MENU BUTTON START -->
+                                <span class="mobile-menu-close-button"><i class="fa fa-times"></i></span>
+                                <!-- MOBILE MENU BUTTON END -->
+                                <ul class="main-menu">
+                                    <li class="mobile-visible">
+                                        <div class="user-detail-dropdown">
+                                            <div class="user-detail">
+                                                <span class="short-name">SK</span>
+                                                <p class="name">Apurba Das</p>
+                                                <span class="user-type">Buyer</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mobile-visible"><a href="#">Settings</a></li>
+                                    <li class="mobile-visible"><a href="#">My Profile</a></li>
+                                    <li class="mobile-visible"><a href="#">Membership</a></li>
+                                    <li class="mobile-visible"><a href="#">Buy Bid Credit</a></li>
+                                    <li>
+                                        <a href="#">Projects <i class="fa fa-angle-down"></i></a>
+                                        <ul>
+                                            <li><a href="#">Find Work</a></li>
+                                            <li><a href="#">Saved Jobs</a></li>
+                                            <li><a href="#">Proposals</a></li>
+                                            <li><a href="#">My Stats</a></li>
+                                            <li><a href="#">My Project</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hire <i class="fa fa-angle-down"></i></a>
+                                        <ul>
+                                            <li><a href="#">Find Freelancer</a></li>
+                                            <li><a href="#">Saved Freelancer</a></li>
+                                            <li><a href="#">Hired Freelancer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Reports <i class="fa fa-angle-down"></i></a>
+                                        <ul>
+                                            <li><a href="#">Overview</a></li>
+                                            <li><a href="#">My Reports</a></li>
+                                            <li><a href="#">Proposal History</a></li>
+                                            <li><a href="#">Transaction History</a></li>
+                                            <li><a href="#">Payment History</a></li>
+                                            <li><a href="#">Withdrawal History</a></li>
+                                            <li><a href="#">Dispute List</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-visible"><a href="#">Logout</a></li>
+                                    <li class="mobile-visible">
+                                        <div class="user-status">
+                                            <button class="active-btn">Online <img src="images/check-icon.svg" alt="" /></button>
+                                            <button>Away</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- MOBILE MENU BUTTON START -->
+                            <span class="mobile-search-button"><i class="fa fa-search"></i></span>
+                            <!-- MOBILE MENU BUTTON END -->
+
+                            <!-- MOBILE MENU BUTTON START -->
+                            <span class="mobile-search-close-button"><i class="fa fa-times"></i></span>
+                            <!-- MOBILE MENU BUTTON END -->
+
+                            <div class="search-bar dropdown">
+                                <div data-toggle="dropdown">
+                                    <span><img src="images/search-icon.svg" alt="" /></span>
+                                    <input type="search" placeholder="Search">
+                                    <span class="arrow"><img src="images/search-arrow-down.svg" alt="" /></span>
+                                </div>
+
+                                <div id="search-box-wrapper" class="dropdown-menu search-dropdown">
+                                    <div class="dropdown-header">
+                                        Buyers can
+                                    </div>
+                                    <div class="search-dropdown-item offers">
+                                        <a href="https://www.google.com/">Search <span class="standout">offers</span> <span class="helper">to buy now</span></a>
+                                    </div>
+                                    <div class="search-dropdown-item freelancers">
+                                        <a href="https://www.google.com/">Search <span class="standout">freelancers</span> <span class="helper">to request a proposal</span></a>
+                                    </div>
+                                    <div class="dropdown-header">
+                                        Freelancers can
+                                    </div>
+                                    <div class="search-dropdown-item projects">
+                                        <a href="https://www.google.com/">Search <span class="standout">projects</span> <span class="helper">to quote on</span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- EMPTY GRID ITEMS -->
+                            <div class="empty-grid-item"></div>
+                            <!-- EMPTY GRID ITEMS -->
+                        </div>
+
+                        <div class="right-header">
+                            <div class="messages">
+                                <ul>
+                                    <li><a href="#">Inbox <span class="message-count"><span>5</span></a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bell-icon">
+                                <ul>
+                                    <li><a href="#"><img src="images/bell-icon.svg" alt="" /> <span class="message-count"><span>5</span></a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="user-detail-dropdown dropdown">
+                                <div class="user-detail" data-toggle="dropdown">
+                                    <p class="name">Apurba Das</p>
+                                    <span class="user-type">Buyer</span>
+                                    <span class="short-name">SK</span>
+                                </div>
+
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href=""><img src="images/settings-settings-icon.svg" alt="" /> Settings</a></li>
+                                        <li><a href=""><img src="images/settings-user-profile-icon.svg" alt="" /> My Profile</a></li>
+                                        <li><a href=""><img src="images/membership-icon.svg" alt="" /> Membership</a></li>
+                                        <li><a href=""><img src="images/cart-icon.svg" alt="" /> Buy Bid Credit</a></li>
+                                        <li><a href=""><img src="images/settings-logout-icon.svg" alt="" /> Logout</a></li>
+                                    </ul>
+
+                                    <div class="user-status">
+                                        <button class="active-btn">Online <img src="images/check-icon.svg" alt="" /></button>
+                                        <button>Away</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER END -->
+
+            <div class="container">
+                <div class="d-flex project-name-detail mb-2">
+                    <h2>I need a WordPress Site (5pages) and a logo design</h2>
+                    <a href="#" class="ml-auto">In Progress <img class="ml-2" src="images/question-mark-icon.svg" alt="" /></a>
+                </div>
+
+                <ul class="small-box-cards heading-cards mb-4">
+                    <li class="pt-blue-card">NDA</li>
+                    <li class="pt-green-card">Long Term</li>
+                    <li class="pt-yellow-card">Featured</li>
+                </ul>
+
+                <div class="content-container main-page only-left-section">
+                    <div class="left-section have-bids-page-menu">
+                        <ul class="bids-buyer-menu">
+                            <i class="fa fa-times mobile-bids-menu-close-button"></i>
+                            <li class="mobile-bids-menu-button"><a href="#"><img src="images/bids-mobile-menu-icon.svg" alt="" /> Menu</a></li>
+                            <li class="have-logo"><a href="#"><img src="images/logo.svg" alt="" /></a></li>
+                            <li class="active"><a href="#">Proposals <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">Hired Freelancer  <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">Project Details  <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">Payment  <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">Work Diary  <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">Upgrade  <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">Files  <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">Feedback  <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">End Contract  <i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="middle-section">
+                        <div class="jobs-list-container">
+                            <div class="single-job mb-4">
+                                <div class="box-heading border-bottom custom-border-color p-4 d-flex justify-content-between align-items-center">
+                                    <p>Project Details</p>
+                                    <a href="#">Edit</a>
+                                </div>
+
+                                <div class="box-content pt-2 p-4 border-bottom custom-border-color">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic 
+                                        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+                                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                                    </p>
+                                </div>
+
+                                <div class="box-footer d-flex justify-content-between p-4">
+                                    <p>Project id: 254565</p>
+                                    <a href="#">Report as spam</a>
+                                </div>
+                            </div>
+
+                            <div class="single-job mb-4">
+                                <div class="box-heading border-bottom custom-border-color p-4 d-flex justify-content-between align-items-center">
+                                    <p>Attachments</p>
+                                    <button class="custom-button">Upload</button>
+                                </div>
+
+                                <div class="box-content pt-2 p-4 border-bottom custom-border-color">
+                                    <ul class="attachment-list">
+                                        <li>
+                                            <a href="#">
+                                                <span class="mr-1"><img src="images/file-attachment-icon.svg" alt="" /></span> 
+                                                File -0102126545.jpeg
+                                                <span class="ml-1 trash-icon"><img src="images/trash-icon-gray.svg" alt="" /></span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="mr-1"><img src="images/file-attachment-icon.svg" alt="" /></span> 
+                                                File -0102126545.jpeg
+                                                <span class="ml-1 trash-icon"><img src="images/trash-icon-gray.svg" alt="" /></span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="mr-1"><img src="images/file-attachment-icon.svg" alt="" /></span> 
+                                                File -0102126545.jpeg
+                                                <span class="ml-1 trash-icon"><img src="images/trash-icon-gray.svg" alt="" /></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single-job mb-4">
+                                <div class="box-heading border-bottom custom-border-color p-4">
+                                    <p>Category and skills</p>
+                                </div>
+
+                                <div class="box-content have-grid-gap pt-2 p-4 border-bottom custom-border-color d-flex justify-content-between">
+                                    <div style="width: 252px">
+                                        <p>Category</p>
+                                        <select>
+                                            <option>Design and Creative</option>
+                                            <option>Design</option>
+                                            <option>Creative</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="flex-fill">
+                                        <p class="mb-2">Skills <a href="#"><img src="images/plus-icon-filled.svg" alt="" /></a></p>
+                                        <ul class="skills-list">
+                                            <li>Augmented Reality (AR)</li>   
+                                            <li>Virtual Reality (VR)</li>   
+                                            <li>Unity3D</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="custom-button load-more-jobs">Load More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER START -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="single-footer-widget widget-1">
+                                <div class="footer-logo">
+                                    <img src="images/white-logo.png" alt="gotlancer">
+                                </div>
+                                <div class="softwares">
+                                    <a href="#"><img src="images/playstore.png" alt=""></a>
+                                    <a href="#"><img src="images/appstore.png" alt=""></a>
+                                </div>
+                                <div class="language-dropdown">
+                                    <select name="" style="display: none;">
+                                        <option value="">English</option>
+                                        <option value="">Hindi</option>
+                                        <option value="">Bengali</option>
+                                        <option value="">French</option>
+                                    </select>
+                                    <div class="nice-select" tabindex="0">
+                                        <span class="current">English</span>
+                                        <ul class="list">
+                                            <li data-value="" class="option selected">English</li>
+                                            <li data-value="" class="option">Hindi</li>
+                                            <li data-value="" class="option">Bengali</li>
+                                            <li data-value="" class="option">French</li>
+                                        </ul>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="single-footer-widget">
+                                <h4>Network</h4>
+                                <ul>
+                                    <li><a href="#">Browse Categories</a></li>
+                                    <li><a href="#">Browse Projects</a></li>
+                                    <li><a href="#">Browse Freelancers</a></li>
+                                    <li><a href="#">Browse Contest</a></li>
+                                    <li><a href="#">Browse Offers</a></li>
+                                    <li><a href="#">Escrow</a></li>
+                                    <li><a href="#">Affiliate Program</a></li>
+                                    <li><a href="#">Desktop App download</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="single-footer-widget">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Gotlancer Foundation</a></li>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">Trust, Safety &amp; Security</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Code of Conduct</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="single-footer-widget no-margin">
+                                <h4>Freelancers</h4>
+                                <ul>
+                                    <li><a href="#">Freelancers by Skill</a></li>
+                                    <li><a href="#">Freelancers in USA</a></li>
+                                    <li><a href="#">Freelancers in UK</a></li>
+                                    <li><a href="#">Freelancers in Canada</a></li>
+                                    <li><a href="#">Freelancers in Australia</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="footer-bottom-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex align-items-center justify-content-start justify-content-center order-1 order-lg-0 copyright-text">
+                            <p>© 2018 - 2020 Gotlancer® Gotlancer Pvt Ltd.</p>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center">
+                            <span>Follow us:</span>
+                            <div class="footer-social-icons">
+                                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER END -->
+        </div>
+    </body>
+</html>
