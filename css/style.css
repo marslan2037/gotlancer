@@ -1448,7 +1448,7 @@ a {
           background-color: #F2F5FA;
           border-radius: 4px; }
     .main-container .content-container .jobs-list-container .single-job .box-content ul.skills-list li {
-      borddr-radius: 4px;
+      border-radius: 4px;
       display: inline-block;
       margin-right: 8px;
       padding: 0 15px;
@@ -1459,6 +1459,9 @@ a {
       color: #A6AFBC; }
       .main-container .content-container .jobs-list-container .single-job .box-content ul.skills-list li:last-child {
         margin: 0; }
+      @media (min-width: 768px) and (max-width: 1280px) {
+        .main-container .content-container .jobs-list-container .single-job .box-content ul.skills-list li {
+          margin: 0 8px 8px 0; } }
     .main-container .content-container .jobs-list-container .single-job .box-content.have-grid-gap {
       grid-gap: 100px; }
       .main-container .content-container .jobs-list-container .single-job .box-content.have-grid-gap .nice-select {
@@ -1519,6 +1522,109 @@ a {
       height: 54px;
       line-height: 54px;
       background: #ffffff; }
+  .main-container .content-container .left-section ul.bids-buyer-menu.content-box {
+    display: block;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 5px #315F8459; }
+    .main-container .content-container .left-section ul.bids-buyer-menu.content-box li a {
+      padding-left: 25px;
+      position: relative;
+      display: block;
+      font-size: 17px;
+      font-weight: 600;
+      color: #8CA2BB; }
+      .main-container .content-container .left-section ul.bids-buyer-menu.content-box li a:hover {
+        background-color: #E3EAF4;
+        color: #485E76;
+        border-left: 4px solid #485E76;
+        border-radius: 0; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .main-container .content-container .left-section ul.bids-buyer-menu.content-box li a {
+          font-size: 13px;
+          color: #485E76;
+          font-weight: 400;
+          padding-left: 12px; } }
+      .main-container .content-container .left-section ul.bids-buyer-menu.content-box li a span {
+        position: absolute;
+        width: 33px;
+        height: 23px;
+        color: #fff;
+        font-size: 14px;
+        right: 20px;
+        text-align: center;
+        line-height: 23px;
+        top: 50%;
+        transform: translate(0, -50%); }
+      .main-container .content-container .left-section ul.bids-buyer-menu.content-box li a span.yellow-card {
+        background-color: #EDB742; }
+      .main-container .content-container .left-section ul.bids-buyer-menu.content-box li a span.gray-card {
+        background-color: #8CA2BB; }
+    .main-container .content-container .left-section ul.bids-buyer-menu.content-box li a.active {
+      background-color: #E3EAF4;
+      color: #485E76;
+      border-left: 4px solid #485E76;
+      border-radius: 0; }
+    .main-container .content-container .left-section ul.bids-buyer-menu.content-box li.mobile-bids-menu-button a {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      grid-gap: 16px; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .main-container .content-container .left-section .single-content-box {
+      display: none; } }
+  .main-container .content-container .left-section .single-content-box .box-heading {
+    border-bottom: none; }
+  .main-container .content-container .left-section .single-content-box .box-detail ul li {
+    position: relative;
+    margin: 0 0 12px;
+    padding-left: 26px; }
+    .main-container .content-container .left-section .single-content-box .box-detail ul li:last-child {
+      margin: 0; }
+      .main-container .content-container .left-section .single-content-box .box-detail ul li:last-child span.checkbox-circle:after {
+        display: none; }
+    .main-container .content-container .left-section .single-content-box .box-detail ul li span {
+      display: block; }
+    .main-container .content-container .left-section .single-content-box .box-detail ul li span.checkbox-circle {
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #8CA2BB;
+      border-radius: 50%;
+      top: 1px; }
+      .main-container .content-container .left-section .single-content-box .box-detail ul li span.checkbox-circle:after {
+        content: '';
+        width: 1px;
+        height: 30px;
+        position: absolute;
+        top: 18px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #E7ECF2; }
+      .main-container .content-container .left-section .single-content-box .box-detail ul li span.checkbox-circle i.fa {
+        display: none;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 13px;
+        transform: translate(-50%, -50%); }
+    .main-container .content-container .left-section .single-content-box .box-detail ul li a.heading {
+      display: block;
+      text-decoration: none;
+      font-size: 14px;
+      color: #485E76;
+      font-weight: 500; }
+    .main-container .content-container .left-section .single-content-box .box-detail ul li span.detail {
+      font-size: 12px;
+      color: #8CA2BB; }
+  .main-container .content-container .left-section .single-content-box .box-detail ul li.active span.checkbox-circle {
+    background-color: #6FB556;
+    border: none; }
+    .main-container .content-container .left-section .single-content-box .box-detail ul li.active span.checkbox-circle:after {
+      background-color: #6FB556; }
+    .main-container .content-container .left-section .single-content-box .box-detail ul li.active span.checkbox-circle i.fa {
+      display: inline-block; }
   @media (min-width: 320px) and (max-width: 767px) {
     .main-container .content-container .left-section.have-bids-page-menu {
       display: block;
@@ -1535,18 +1641,22 @@ a {
       .main-container .content-container .left-section.have-bids-page-menu ul {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 42px;
-        grid-gap: 15px; } }
+        grid-gap: 15px;
+        background: none !important;
+        box-shadow: none !important;
+        margin: 0 !important; } }
     .main-container .content-container .left-section.have-bids-page-menu ul i.fa.fa-times {
       display: none; }
   .main-container .content-container .left-section.have-bids-page-menu ul.have-open-mobile-bids-menu {
     position: absolute;
-    top: 0;
+    top: -60px;
     z-index: 10000;
-    background: #fff;
+    background: #fff !important;
     width: 100%;
     left: 0;
     display: block;
     height: 100vh;
+    border-radius: 0;
     overflow-y: auto; }
     .main-container .content-container .left-section.have-bids-page-menu ul.have-open-mobile-bids-menu i.fa.fa-times {
       position: absolute;
@@ -1588,6 +1698,8 @@ a {
         .main-container .content-container .left-section.have-bids-page-menu ul.have-open-mobile-bids-menu li.have-logo a img {
           display: block;
           justify-self: start; } }
+  .main-container .content-container .left-section.have-bids-page-menu li.have-logo a {
+    display: grid !important; }
   .main-container .content-container .left-section.have-bids-page-menu li.mobile-bids-menu-button {
     display: none; }
     @media (min-width: 320px) and (max-width: 767px) {

@@ -1862,7 +1862,7 @@ a {
                     }
                     ul.skills-list {
                         li {
-                            borddr-radius: 4px;
+                            border-radius: 4px;
                             display: inline-block;
                             margin-right: 8px;
                             padding: 0 15px;
@@ -1873,6 +1873,9 @@ a {
                             color: #A6AFBC;
                             &:last-child {
                                 margin: 0;
+                            }
+                            @media (min-width: 768px) and (max-width: 1280px) {
+                                margin: 0 8px 8px 0; 
                             }
                         }
                     }
@@ -1964,6 +1967,144 @@ a {
                     }
                 }
             } 
+            ul.bids-buyer-menu.content-box {
+                display: block;
+                background-color: #fff;
+                border-radius: 9px;
+                box-shadow: 0px 0px 5px #315F8459;
+                li {
+                    a {
+                        padding-left: 25px;
+                        position: relative;
+                        display: block;
+                        font-size: 17px;
+                        font-weight: 600;
+                        color: #8CA2BB;
+                        &:hover {
+                            background-color: #E3EAF4;
+                            color: #485E76;
+                            border-left: 4px solid #485E76;
+                            border-radius: 0;
+                        }
+                        @media (min-width: 320px) and (max-width: 767px) {
+                            font-size: 13px;
+                            color: #485E76;
+                            font-weight: 400;
+                            padding-left: 12px;
+                        }
+                        span {
+                            position: absolute;
+                            width: 33px;
+                            height: 23px;
+                            color: #fff;
+                            font-size: 14px;
+                            right: 20px;
+                            text-align: center;
+                            line-height: 23px;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                        }
+                        span.yellow-card {
+                            background-color: #EDB742;
+                        }
+                        span.gray-card {
+                            background-color: #8CA2BB;
+                        }
+                    }
+                    a.active {
+                        background-color: #E3EAF4;
+                        color: #485E76;
+                        border-left: 4px solid #485E76;
+                        border-radius: 0;
+                    }
+                }
+                li.mobile-bids-menu-button {
+                    a {
+                        display: grid;
+                        grid-template-columns: 26px 1fr;
+                        grid-gap: 16px;
+                    }
+                }
+            }
+            .single-content-box {
+                @media (min-width: 320px) and (max-width: 767px) {
+                    display: none;
+                }
+                .box-heading {
+                    border-bottom: none;
+                }
+                .box-detail {
+                    ul {
+                        li {
+                            position: relative;
+                            margin: 0 0 12px;
+                            padding-left: 26px;
+                            &:last-child {
+                                margin: 0;
+                                span.checkbox-circle {
+                                    &:after {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            span {
+                                display: block;
+                            }
+                            span.checkbox-circle {
+                                position: absolute;
+                                left: 0;
+                                width: 18px;
+                                height: 18px;
+                                border: 1px solid #8CA2BB;
+                                border-radius: 50%;
+                                top: 1px;
+                                &:after {
+                                    content: '';
+                                    width: 1px;
+                                    height: 30px;
+                                    position: absolute;
+                                    top: 18px;
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                    background-color: #E7ECF2;
+                                }
+                                i.fa {
+                                    display: none;
+                                    color: #fff;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    font-size: 13px;
+                                    transform: translate(-50%, -50%);
+                                }
+                            }
+                            a.heading {
+                                display: block;
+                                text-decoration: none;
+                                font-size: 14px;
+                                color: #485E76;
+                                font-weight: 500;
+                            }
+                            span.detail {
+                                font-size: 12px;
+                                color: #8CA2BB;
+                            }
+                        }
+                        li.active {
+                            span.checkbox-circle {
+                                background-color: #6FB556;
+                                border: none;
+                                &:after {
+                                    background-color: #6FB556;
+                                }
+                                i.fa {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .left-section.have-bids-page-menu {
             @media (min-width: 320px) and (max-width: 767px) {
@@ -1982,6 +2123,9 @@ a {
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: 42px;
                     grid-gap: 15px;
+                    background: none !important;
+                    box-shadow: none !important;
+                    margin: 0 !important;
                 }
                 i.fa.fa-times {
                     display: none;
@@ -1989,13 +2133,14 @@ a {
             }
             ul.have-open-mobile-bids-menu {
                 position: absolute;
-                top: 0;
+                top: -60px;
                 z-index: 10000;
-                background: #fff;
+                background: #fff !important;
                 width: 100%;
                 left: 0;
                 display: block;
                 height: 100vh;
+                border-radius: 0;
                 overflow-y: auto;
                 i.fa.fa-times {
                     position: absolute;
@@ -2049,6 +2194,11 @@ a {
                             }
                         }
                     }
+                }
+            }
+            li.have-logo {
+                a {
+                    display: grid !important;
                 }
             }
             li.mobile-bids-menu-button {
