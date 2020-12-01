@@ -51,6 +51,10 @@ a {
     }
 }
 
+.font-weight-semi-bold {
+    font-weight: 500;
+}
+
 .custom-border-color {
     // border-bottom: 1px solid #EBEDF3!important;
     border-color: #EBEDF3!important;
@@ -66,6 +70,39 @@ a {
 }
 .force-hide {
     display: none !important;
+}
+
+.user-status {
+    display: grid;
+    grid-template-columns: 59px auto;
+    align-items: center;
+    grid-gap: 18px;
+    cursor: pointer;
+    margin: 0 0 21px;
+    span.s-outer {
+        width: 59px;
+        height: 28px;
+        border-radius: 14px;
+        background-color: #CED8E1;
+        position: relative;
+        span.s-inner {
+            width: 22px;
+            height: 22px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: 3px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+    span.s-outer.s-on {
+        background-color: #71B659;
+        span.s-inner {
+            left: initial;
+            right: 3px;
+        }
+    }
 }
 
 //DROPDOWN
@@ -1914,6 +1951,9 @@ a {
             @media (min-width: 320px) and (max-width: 767px) {
                 display: none;
             }
+            .filter-section {
+                margin: 0 0 18px !important;
+            }
             ul.bids-buyer-menu { 
                 display: grid;
                 li {
@@ -2239,25 +2279,87 @@ a {
                 }
             }
         }
+        
+        .filter-section {
+            margin: 0 0 32px;
+            p.filter-heading {
+                color: #314963;
+                font-size: 14px;
+                line-height: 16.8px;
+            }
+            ul {
+                li {
+                    position: relative;
+                    list-style: none;
+                    span.filter-count {
+                        color: #485E76;
+                        font-size: 12.45px;
+                        line-height: 15px;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                    }
+                    .nice-select {
+                        display: none !important;
+                    }
+                    select {
+                        display: block !important;
+                        border: 1px solid #E7ECF2;
+                        border-radius: 4px;
+                        background: #FFFFFF;
+                        color: #CED8E1;
+                        font-size: 13px;
+                        width: 100%;
+                        height: 30px;
+                        padding-left: 8px;
+                        position: relative;
+                        top: -6px;
+                    }
+                    .have-range {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 10px;
+                        padding-left: 28px;
+                        span {
+                            position: relative;
+                            display: grid;
+                            grid-gap: 3px;
+                            color: #485E76;
+                            font-size: 13px;
+                            span.dollar-sign {
+                                color: #74B95C;
+                                font-size: 14px;
+                                line-height: 30px;
+                                position: absolute;
+                                left: 5px;
+                            }
+                            input {
+                                padding: 0 5px 0 15px;
+                                color: #485E76;
+                                font-size: 14px;
+                                height: 30px;
+                                width: 100%;
+                                border: 1px solid #E7ECF2;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+                li.have-ratings {
+                    span {
+                        font-size: 20px;
+                    }
+                    span.checked {
+                        color: orange;
+                    }
+                }
+            }
+        }
 
         .right-section {
             @media (min-width: 320px) and (max-width: 991px) {
                 display: none;
-            }
-            .filter-section {
-                margin: 0 0 32px;
-                h2 {
-                    color: #314963;
-                    font-size: 14px;
-                    font-weight: 600;
-                    line-height: 16.8px;
-                }
-                ul {
-                    li {
-                        position: relative;
-                        list-style: none;
-                    }
-                }
             }
         }
     }
