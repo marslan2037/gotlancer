@@ -1971,6 +1971,147 @@ a:hover {
   color: #F7596A;
   font-weight: 500;
 }
+.main-container .content-container .jobs-list-container .single-offer {
+  position: relative;
+  padding-left: 295px !important;
+}
+.main-container .content-container .jobs-list-container .single-offer .offer-img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading {
+  display: block;
+  width: 372px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading a {
+  color: #314963;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 372px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p {
+  font-size: 12px;
+  color: #314963;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p span {
+  color: #ADBDCD;
+  top: initial;
+  margin-right: 3px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p .offer-in {
+  margin-left: 15px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail ul li {
+  display: inline-block;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail ul li span {
+  font-size: 16px;
+  top: initial;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail ul li span.checked {
+  color: orange;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail ul li:first-child {
+  background-color: #F2F5FA;
+  padding: 2px 4px;
+  margin-right: 8px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail {
+  grid-template-columns: 1fr;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .job-description > p {
+  width: 270px;
+  color: #314963;
+  font-size: 12px;
+  line-height: 15px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .job-cat li {
+  background-color: #F2F5FA;
+  color: #314963;
+  font-size: 13px;
+  border-radius: 11px;
+  height: 22px;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .job-cat li:first-child {
+  background: none;
+  border-radius: 0;
+  font-size: 12px;
+  margin-right: 19px;
+  padding: 0;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 35px;
+  align-items: center;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-price {
+  border: 1px solid #E7ECF2;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  padding: 12px;
+  border-radius: 4px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-price h1 {
+  color: #314963;
+  font-size: 13px;
+  font-weight: normal;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-price p {
+  font-size: 23px;
+  line-height: 28px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-price p strike {
+  color: #CED8E1;
+  margin-right: 8px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-price p span {
+  color: #74B95C;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-price .total {
+  justify-self: end;
+  padding-right: 12px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-price .total p {
+  color: #314963;
+  font-size: 12px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-footer-btn {
+  display: grid;
+  grid-template-columns: 136px 136px;
+  justify-content: end;
+  grid-column-gap: 18px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-footer-btn .offer-btn-black {
+  background-color: #314963;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-footer-btn .offer-btn-green {
+  background-color: #74B95C;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-content-detail .offer-footer .offer-footer-btn button {
+  border: none;
+  color: white;
+  width: 136px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 13px;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container .content-container .left-section {
     display: none;

@@ -1945,6 +1945,158 @@ a {
                     }
                 }
             }
+            .single-offer {
+                // display: grid;
+                // grid-template-columns: 234px auto;
+                // grid-column-gap: 20px;
+                position: relative;
+                padding-left: 295px !important;
+                .offer-img {
+                    img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                    }
+                }
+                .job-heading {
+                    display: block;
+                    width: 372px;
+                    a {
+                        color: #314963;
+                        font-size: 16px;
+                        line-height: 18px;
+                        font-weight: normal;
+                        display: block;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        width: 372px;
+                    }
+                    .offer-user-detail {
+                        display: grid;
+                        grid-column-gap: 20px;
+                        grid-template-columns: 1fr 1fr;
+                        align-items: center;
+                        p {
+                            font-size: 12px;
+                            color: #314963;
+                            span {
+                                color: #ADBDCD;
+                                top: initial;
+                                margin-right: 3px;
+                            }
+                            .offer-in {
+                                margin-left: 15px;
+                            }
+                        }
+                        ul {
+                            li {
+                                display: inline-block;
+                                span {
+                                    font-size: 16px;
+                                    top: initial;
+                                }
+                                span.checked {
+                                    color: orange;
+                                }
+                                &:first-child {
+                                    background-color: #F2F5FA;
+                                    padding: 2px 4px;
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+               .job-content-detail {
+                   grid-template-columns: 1fr;
+                   .job-description {
+                       > p {
+                           width: 270px;
+                           color: #314963;
+                           font-size: 12px;
+                           line-height: 15px;
+                       }
+                   }
+                    .job-cat {
+                        li {
+                            background-color: #F2F5FA;
+                            color: #314963;
+                            font-size: 13px;
+                            border-radius: 11px;
+                            height: 22px;
+                            margin-bottom: 0;
+                            margin-right: 5px;
+                            &:first-child {
+                                background: none;
+                                border-radius: 0;
+                                font-size: 12px;
+                                margin-right: 19px;
+                                padding: 0;
+                            }
+                        }
+                    }
+                    .offer-footer {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-column-gap: 35px;
+                        align-items: center;
+                        .offer-price {
+                            border: 1px solid #E7ECF2;
+                            display: grid;
+                            grid-template-columns: 1.2fr 1fr;
+                            padding: 12px;
+                            border-radius: 4px;
+                            h1 {
+                                color: #314963;
+                                font-size: 13px;
+                                font-weight: normal;
+                            }
+                            p {
+                                font-size: 23px;
+                                line-height: 28px;
+                                strike {
+                                    color: #CED8E1;
+                                    margin-right: 8px;
+                                }
+                                span {
+                                    color: #74B95C;
+                                }
+                            }
+                            .total {
+                                justify-self: end;
+                                padding-right: 12px;
+                            }
+                            .total p {
+                                color: #314963;
+                                font-size: 12px;
+                            }
+                        }
+                        .offer-footer-btn {
+                            display: grid;
+                            grid-template-columns: 136px 136px;
+                            justify-content: end;
+                            grid-column-gap: 18px;
+                            .offer-btn-black {
+                                background-color: #314963;
+                            }
+                            .offer-btn-green {
+                                background-color: #74B95C;
+                            }
+                            button {
+                                border: none;
+                                color: white;
+                                width: 136px;
+                                height: 40px;
+                                border-radius: 4px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+               }
+            }
         }
 
         .left-section {
