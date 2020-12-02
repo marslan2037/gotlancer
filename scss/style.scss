@@ -1546,7 +1546,7 @@ a {
                 background-color: #fff;
                 @media (min-width: 320px) and (max-width: 767px) {
                     box-shadow: none;
-                    border-radius: none;
+                    border-radius: 0;
                     margin: 0 !important;
                     border-bottom: 1px solid #EBEDF3;
                     &:last-child {
@@ -1946,18 +1946,15 @@ a {
                 }
             }
             .single-offer {
-                // display: grid;
-                // grid-template-columns: 234px auto;
-                // grid-column-gap: 20px;
+                min-height: 234px;
                 position: relative;
-                padding-left: 295px !important;
+                padding-left: 250px !important;
                 .offer-img {
                     img {
                         position: absolute;
                         left: 0;
                         top: 0;
                         bottom: 0;
-                        height: 100%;
                     }
                 }
                 .job-heading {
@@ -1976,19 +1973,45 @@ a {
                     }
                     .offer-user-detail {
                         display: grid;
-                        grid-column-gap: 20px;
+                        grid-column-gap: 15px;
                         grid-template-columns: 1fr 1fr;
                         align-items: center;
                         p {
                             font-size: 12px;
                             color: #314963;
-                            span {
+                            span.small-text {
                                 color: #ADBDCD;
                                 top: initial;
                                 margin-right: 3px;
                             }
+                            a {
+                                position: relative;
+                                text-decoration: none;
+                                font-size: inherit;
+                                color: inherit;
+                                display: inline;
+                                &:hover {
+                                    .user-detail-box {
+                                        display: block;
+                                    }
+                                }
+                                .user-detail-box {
+                                    position: absolute;
+                                    display: none;
+                                    background-color: white;
+                                    top: 5px;
+                                    left: 65px;
+                                    z-index: 1;
+                                    box-shadow: 0px 0px 3px #324D6659;
+                                    border-radius: 3px;
+
+                                }
+                            }
+                            .user-detail-box {
+                                display: none;
+                            }
                             .offer-in {
-                                margin-left: 15px;
+                                margin-left: 10px;
                             }
                         }
                         ul {
@@ -2047,8 +2070,9 @@ a {
                             border: 1px solid #E7ECF2;
                             display: grid;
                             grid-template-columns: 1.2fr 1fr;
-                            padding: 12px;
+                            padding: 4px 12px;
                             border-radius: 4px;
+                            height: 58px;
                             h1 {
                                 color: #314963;
                                 font-size: 13px;
@@ -2081,9 +2105,15 @@ a {
                             grid-column-gap: 18px;
                             .offer-btn-black {
                                 background-color: #314963;
+                                &:hover {
+                                    background-color: #455b72;
+                                }
                             }
                             .offer-btn-green {
                                 background-color: #74B95C;
+                                &:hover {
+                                    background-color: #68a652;
+                                }
                             }
                             button {
                                 border: none;
