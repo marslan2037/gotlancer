@@ -1982,10 +1982,13 @@ a {
                 position: relative;
                 padding-left: 250px !important;
                 @media (min-width: 320px) and (max-width: 767px) {
-                    
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    padding-left: 0 !important;
                 }
                 @media (min-width: 768px) and (max-width: 1280px) {
-                    
+                    display: grid;
+                    grid-template-columns: 1fr;
                 }
                 .offer-img {
                     img {
@@ -1993,11 +1996,24 @@ a {
                         left: 0;
                         top: 0;
                         bottom: 0;
+                        @media (min-width: 320px) and (max-width: 767px) {
+                            position: initial;
+                            justify-content: center;
+                        }
+                        @media (min-width: 768px) and (max-width: 1280px) {
+                            position: initial;
+                        }
                     }
                 }
                 .job-heading {
                     display: block;
                     width: 372px;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                    width: 100%;
+                    }
+                    @media (min-width: 768px) and (max-width: 1280px) {
+                    width: 100%;
+                    }
                     a {
                         color: #314963;
                         font-size: 16px;
@@ -2014,6 +2030,8 @@ a {
                         grid-column-gap: 15px;
                         grid-template-columns: 1fr 1fr;
                         align-items: center;
+
+                        
                         p {
                             font-size: 12px;
                             color: #314963;
@@ -2042,14 +2060,14 @@ a {
                                     z-index: 1;
                                     box-shadow: 0px 0px 3px #324D6659;
                                     border-radius: 3px;
-                                    padding: 10px;
+                                    padding: 10px 0;
                                         .u-heading {
                                             display: grid;
                                             grid-template-columns: 34px 1fr 50px;
-                                            border-bottom: 1px solid;
+                                            border-bottom: 1px solid #E3EAF4;
                                             align-items: center;
                                             grid-gap: 10px;
-                                            padding: 0 0 6px 0;
+                                            padding: 0 10px 6px 10px;
                                                 span {
                                                     top: initial;
                                                 }
@@ -2085,8 +2103,8 @@ a {
                                         .u-wrapper {
                                             display: block;
                                             height: 0px;
-                                            padding: 10px 15px;
-                                            border-bottom: 1px solid;
+                                            padding: 10px 25px;
+                                            border-bottom: 1px solid #E3EAF4;
                                             height: 60px;
                                             span {
                                                 font-size: 12px;
@@ -2116,7 +2134,7 @@ a {
                                         }
                                         .u-footer {
                                             display: inline-block;
-                                            padding: initial;
+                                            padding: 0 10px;
                                             display: grid;
                                             grid-template-columns: 94px 94px;
                                             grid-column-gap: 10px;

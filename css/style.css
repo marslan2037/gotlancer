@@ -2001,15 +2001,49 @@ a:hover {
   position: relative;
   padding-left: 250px !important;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .content-container .jobs-list-container .single-offer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0 !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .main-container .content-container .jobs-list-container .single-offer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .main-container .content-container .jobs-list-container .single-offer .offer-img img {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .content-container .jobs-list-container .single-offer .offer-img img {
+    position: initial;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .main-container .content-container .jobs-list-container .single-offer .offer-img img {
+    position: initial;
+  }
+}
 .main-container .content-container .jobs-list-container .single-offer .job-heading {
   display: block;
   width: 372px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .content-container .jobs-list-container .single-offer .job-heading {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .main-container .content-container .jobs-list-container .single-offer .job-heading {
+    width: 100%;
+  }
 }
 .main-container .content-container .jobs-list-container .single-offer .job-heading a {
   color: #314963;
@@ -2056,15 +2090,15 @@ a:hover {
   z-index: 1;
   box-shadow: 0px 0px 3px #324D6659;
   border-radius: 3px;
-  padding: 10px;
+  padding: 10px 0;
 }
 .main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-heading {
   display: grid;
   grid-template-columns: 34px 1fr 50px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #E3EAF4;
   align-items: center;
   grid-gap: 10px;
-  padding: 0 0 6px 0;
+  padding: 0 10px 6px 10px;
 }
 .main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-heading span {
   top: initial;
@@ -2102,8 +2136,8 @@ a:hover {
 .main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-wrapper {
   display: block;
   height: 0px;
-  padding: 10px 15px;
-  border-bottom: 1px solid;
+  padding: 10px 25px;
+  border-bottom: 1px solid #E3EAF4;
   height: 60px;
 }
 .main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-wrapper span {
@@ -2131,7 +2165,7 @@ a:hover {
 }
 .main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-footer {
   display: inline-block;
-  padding: initial;
+  padding: 0 10px;
   display: grid;
   grid-template-columns: 94px 94px;
   grid-column-gap: 10px;
