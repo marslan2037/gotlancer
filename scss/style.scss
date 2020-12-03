@@ -257,6 +257,13 @@ a {
                     background-color: #74B95C;
                 }
             }
+            li.black-button {
+                a {
+                    border-radius: 5px;
+                    color: #fff;
+                    background-color: #314963;
+                }
+            }
         }
     }
     
@@ -1523,12 +1530,37 @@ a {
             font-size: 12.45px;
             line-height: 16.8px;
             color: #8CA2BB;
+            position: relative;
             span {
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 16.8px;
                 color: #314963;
             }
+            span.mobile-bids-menu-button {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: -10px;
+                cursor: pointer;
+                width: 105px;
+                padding: 7px 12px;
+                background-color: #E3EAF4;
+                border-radius: 6px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    display: block;
+                    width: 100%;
+                    
+                    border-radius: 6px;
+                    width: 115px;
+                }
+            }
+            // @media (min-width: 320px) and (max-width: 767px) {
+            //     button.mobile-bids-menu-button {
+            //         display: block;
+            //     }        
+            // }
+            
         }
         
         .jobs-list-container {
@@ -1949,6 +1981,12 @@ a {
                 min-height: 234px;
                 position: relative;
                 padding-left: 250px !important;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    
+                }
+                @media (min-width: 768px) and (max-width: 1280px) {
+                    
+                }
                 .offer-img {
                     img {
                         position: absolute;
@@ -2004,11 +2042,110 @@ a {
                                     z-index: 1;
                                     box-shadow: 0px 0px 3px #324D6659;
                                     border-radius: 3px;
-
+                                    padding: 10px;
+                                        .u-heading {
+                                            display: grid;
+                                            grid-template-columns: 34px 1fr 50px;
+                                            border-bottom: 1px solid;
+                                            align-items: center;
+                                            grid-gap: 10px;
+                                            padding: 0 0 6px 0;
+                                                span {
+                                                    top: initial;
+                                                }
+                                                .u-img {
+                                                    position: relative;
+                                                    span.status {
+                                                        width: 9.07px;
+                                                        height: 9.07px;
+                                                        border-radius: 50%;
+                                                        position: absolute;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        background: #606060;
+                                                        border: 2px solid #ffffff;
+                                                        @media (min-width: 320px) and (max-width: 767px) {
+                                                            width: 9.07px;
+                                                            height: 9.07px;
+                                                        }
+                                                    }
+                                                    span.status.active {
+                                                        background: #0BB783;
+                                                    }
+                                                }
+                                                span.u-level {
+                                                    background-color: orange;
+                                                    width: 50px;
+                                                    color: white;
+                                                    font-size: 12px;
+                                                    padding: 5px;
+                                                    display: inline-block;
+                                                } 
+                                        }
+                                        .u-wrapper {
+                                            display: block;
+                                            height: 0px;
+                                            padding: 10px 15px;
+                                            border-bottom: 1px solid;
+                                            height: 60px;
+                                            span {
+                                                font-size: 12px;
+                                                color: #314963;
+                                            }
+                                            .u-ratings {
+                                                display: block;
+                                                top: 10px;
+                                                span {
+                                                    top: initial;
+                                                }
+                                                .u-num {
+                                                    background-color: #F2F5FA;
+                                                    padding: 2px 4px;
+                                                    margin-right: 8px;
+                                                }
+                                                .have-ratings {
+                                                    span {
+                                                        top: initial;
+                                                        font-size: 17px;
+                                                    }
+                                                }
+                                                span.checked {
+                                                    color: orange;
+                                                }
+                                            }
+                                        }
+                                        .u-footer {
+                                            display: inline-block;
+                                            padding: initial;
+                                            display: grid;
+                                            grid-template-columns: 94px 94px;
+                                            grid-column-gap: 10px;
+                                            span {
+                                                .offer-btn-green {
+                                                    background-color: #74B95C;
+                                                    &:hover {
+                                                        background-color: #68a652;
+                                                    }
+                                                }
+                                                .offer-btn-black {
+                                                    background-color: #314963;
+                                                    margin-left: 6px;
+                                                    &:hover {
+                                                        background-color: #455b72;
+                                                    }
+                                                }
+                                                button {
+                                                    border: none;
+                                                    color: white;
+                                                    width: 94px;
+                                                    height: 31px;
+                                                    border-radius: 4px;
+                                                    font-size: 13px;
+                                                    margin-top: 20px;
+                                                }
+                                            }
+                                        }
                                 }
-                            }
-                            .user-detail-box {
-                                display: none;
                             }
                             .offer-in {
                                 margin-left: 10px;

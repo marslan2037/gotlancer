@@ -253,6 +253,11 @@ a:hover {
   color: #fff;
   background-color: #74B95C;
 }
+.main-container .filter-bar ul.menu-buttons li.black-button a {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #314963;
+}
 .main-container span.short-name {
   grid-row: 1/3;
   grid-column: 2;
@@ -1534,12 +1539,32 @@ a:hover {
   font-size: 12.45px;
   line-height: 16.8px;
   color: #8CA2BB;
+  position: relative;
 }
 .main-container .content-container p.job-count-result span {
   font-weight: 600;
   font-size: 14px;
   line-height: 16.8px;
   color: #314963;
+}
+.main-container .content-container p.job-count-result span.mobile-bids-menu-button {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  cursor: pointer;
+  width: 105px;
+  padding: 7px 12px;
+  background-color: #E3EAF4;
+  border-radius: 6px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .content-container p.job-count-result span.mobile-bids-menu-button {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    width: 115px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container .content-container .jobs-list-container {
@@ -2031,9 +2056,107 @@ a:hover {
   z-index: 1;
   box-shadow: 0px 0px 3px #324D6659;
   border-radius: 3px;
+  padding: 10px;
 }
-.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p .user-detail-box {
-  display: none;
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-heading {
+  display: grid;
+  grid-template-columns: 34px 1fr 50px;
+  border-bottom: 1px solid;
+  align-items: center;
+  grid-gap: 10px;
+  padding: 0 0 6px 0;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-heading span {
+  top: initial;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-heading .u-img {
+  position: relative;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-heading .u-img span.status {
+  width: 9.07px;
+  height: 9.07px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #606060;
+  border: 2px solid #ffffff;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-heading .u-img span.status {
+    width: 9.07px;
+    height: 9.07px;
+  }
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-heading .u-img span.status.active {
+  background: #0BB783;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-heading span.u-level {
+  background-color: orange;
+  width: 50px;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  display: inline-block;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-wrapper {
+  display: block;
+  height: 0px;
+  padding: 10px 15px;
+  border-bottom: 1px solid;
+  height: 60px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-wrapper span {
+  font-size: 12px;
+  color: #314963;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-wrapper .u-ratings {
+  display: block;
+  top: 10px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-wrapper .u-ratings span {
+  top: initial;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-wrapper .u-ratings .u-num {
+  background-color: #F2F5FA;
+  padding: 2px 4px;
+  margin-right: 8px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-wrapper .u-ratings .have-ratings span {
+  top: initial;
+  font-size: 17px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-wrapper .u-ratings span.checked {
+  color: orange;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-footer {
+  display: inline-block;
+  padding: initial;
+  display: grid;
+  grid-template-columns: 94px 94px;
+  grid-column-gap: 10px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-footer span .offer-btn-green {
+  background-color: #74B95C;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-footer span .offer-btn-green:hover {
+  background-color: #68a652;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-footer span .offer-btn-black {
+  background-color: #314963;
+  margin-left: 6px;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-footer span .offer-btn-black:hover {
+  background-color: #455b72;
+}
+.main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p a .user-detail-box .u-footer span button {
+  border: none;
+  color: white;
+  width: 94px;
+  height: 31px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-top: 20px;
 }
 .main-container .content-container .jobs-list-container .single-offer .job-heading .offer-user-detail p .offer-in {
   margin-left: 10px;
