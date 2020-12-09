@@ -18,6 +18,10 @@
     font-family: ArialMTBold;
     src: url(../fonts/ArialMTBold.otf);
 }
+@font-face {
+    font-family: ArialMT;
+    src: url(../fonts/arialmt.otf);
+}
 
 *, body {
     margin: 0;
@@ -55,6 +59,12 @@ a {
     font-weight: 500;
 }
 
+.have-grid {
+    display: grid;
+}
+.have-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .custom-border-color {
     // border-bottom: 1px solid #EBEDF3!important;
     border-color: #EBEDF3!important;
@@ -1049,6 +1059,42 @@ a {
     }
 
     .content-container {
+        .content-container-heading {
+            h2 {
+                font-family: ArialMT;
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 21px;
+                padding-top: 30px;
+            }
+            p {
+                font-family: ArialMT;
+                font-size: 18px;
+                line-height: 21px;
+                a {
+                    font-family: ArialMT;
+                    text-decoration: none;
+                    color: #0F996D;
+                }
+            }
+        }
+        .contact-support {
+            margin-top: 47px;
+            text-align: center;
+            margin-bottom: 55px;
+            p {
+                font-family: ArialMT;
+                font-size: 18px;
+                line-height: 21px;
+            }
+            a {
+                font-family: ArialMT;
+                text-decoration: none;
+                color: #0F996D;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
         .single-card {
             border-radius: 9px;
             height: 220px;
@@ -1331,6 +1377,7 @@ a {
                     }
                 }
             }
+
         }
 
         .right-content {
@@ -1465,6 +1512,42 @@ a {
                 }
                 @media (min-width: 541px) and (max-width: 1023px) {
                     grid-gap: 24px;
+                }
+            }
+        }
+        .inner-container.full-content {
+            grid-template-columns: 1fr;
+            .main-content {
+                grid-gap: 22px;
+                .single-content-box {
+                    height: initial;
+                    max-height: initial;
+                    margin-bottom: 0 !important;
+                    .box-heading {
+                        height: initial;
+                        border-bottom: none;
+                        display: block;
+                            img {
+                                width: 62px;
+                                height: 56px;
+                            }
+                    }
+                    .box-detail {
+                        a {
+                            font-family: ArialMTBold;
+                            font-size: 18px;
+                            text-decoration: none;
+                            color: #484848;
+                            &:hover {
+                                color: inherit;
+                            }
+                        }
+                        p {
+                            font-family: ArialMT;
+                            font-size: 16px;
+                            line-height: 21px;
+                        }
+                    }
                 }
             }
         }
@@ -2699,6 +2782,8 @@ a {
                 display: none;
             }
         }
+    
+    
     }
 
     .notification-container {
@@ -3620,8 +3705,12 @@ a {
     }
 
     footer {
-        background-color: #485E76;
-        padding: 30px 0 50px;
+        background-color: #F7F7F7;
+        padding: 30px 0 0;
+        .container {
+            border-bottom: 1px solid #DDDDDD;
+            padding-bottom: 50px;
+        }
         .single-footer-widget {
             @media (min-width: 320px) and (max-width: 767px) {
                 margin: 0 0 30px;
@@ -3634,7 +3723,7 @@ a {
             font-size: 20px;
             font-weight: 500;
             text-transform: uppercase;
-            color: #B9CAD9;
+            color: #515154;
             @media (min-width: 320px) and (max-width: 767px) {
                 text-align: left;
             }
@@ -3684,7 +3773,7 @@ a {
                     text-align: left;
                 }
                 a {
-                    color: #B9CAD9;
+                    color: #515154;
                     font-size: 16px;
                     margin-bottom: 9px;
                     transition: all 0.3s ease;
@@ -3701,7 +3790,7 @@ a {
     }
     .footer-bottom-bar {
         padding: 20px 0;
-        background-color: #314963;
+        background-color: #F7F7F7;
         p, span {
             color: #B9CAD9;
             font-size: 16px;

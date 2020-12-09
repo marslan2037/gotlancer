@@ -18,6 +18,10 @@
   font-family: ArialMTBold;
   src: url(../fonts/ArialMTBold.otf);
 }
+@font-face {
+  font-family: ArialMT;
+  src: url(../fonts/arialmt.otf);
+}
 *, body {
   margin: 0;
   padding: 0;
@@ -55,6 +59,14 @@ a:hover {
 
 .font-weight-semi-bold {
   font-weight: 500;
+}
+
+.have-grid {
+  display: grid;
+}
+
+.have-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .custom-border-color {
@@ -1042,6 +1054,40 @@ a:hover {
 .main-container header .user-status button.active-btn {
   background: #6FB556;
 }
+.main-container .content-container .content-container-heading h2 {
+  font-family: ArialMT;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 21px;
+  padding-top: 30px;
+}
+.main-container .content-container .content-container-heading p {
+  font-family: ArialMT;
+  font-size: 18px;
+  line-height: 21px;
+}
+.main-container .content-container .content-container-heading p a {
+  font-family: ArialMT;
+  text-decoration: none;
+  color: #0F996D;
+}
+.main-container .content-container .contact-support {
+  margin-top: 47px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.main-container .content-container .contact-support p {
+  font-family: ArialMT;
+  font-size: 18px;
+  line-height: 21px;
+}
+.main-container .content-container .contact-support a {
+  font-family: ArialMT;
+  text-decoration: none;
+  color: #0F996D;
+  font-size: 18px;
+  line-height: 21px;
+}
 .main-container .content-container .single-card {
   border-radius: 9px;
   height: 220px;
@@ -1483,6 +1529,40 @@ a:hover {
   .main-container .content-container .inner-container .cards-list {
     grid-gap: 24px;
   }
+}
+.main-container .content-container .inner-container.full-content {
+  grid-template-columns: 1fr;
+}
+.main-container .content-container .inner-container.full-content .main-content {
+  grid-gap: 22px;
+}
+.main-container .content-container .inner-container.full-content .main-content .single-content-box {
+  height: initial;
+  max-height: initial;
+  margin-bottom: 0 !important;
+}
+.main-container .content-container .inner-container.full-content .main-content .single-content-box .box-heading {
+  height: initial;
+  border-bottom: none;
+  display: block;
+}
+.main-container .content-container .inner-container.full-content .main-content .single-content-box .box-heading img {
+  width: 62px;
+  height: 56px;
+}
+.main-container .content-container .inner-container.full-content .main-content .single-content-box .box-detail a {
+  font-family: ArialMTBold;
+  font-size: 18px;
+  text-decoration: none;
+  color: #484848;
+}
+.main-container .content-container .inner-container.full-content .main-content .single-content-box .box-detail a:hover {
+  color: inherit;
+}
+.main-container .content-container .inner-container.full-content .main-content .single-content-box .box-detail p {
+  font-family: ArialMT;
+  font-size: 16px;
+  line-height: 21px;
 }
 .main-container .content-container button.custom-button {
   margin: 0;
@@ -3670,8 +3750,12 @@ a:hover {
   }
 }
 .main-container footer {
-  background-color: #485E76;
-  padding: 30px 0 50px;
+  background-color: #F7F7F7;
+  padding: 30px 0 0;
+}
+.main-container footer .container {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 50px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container footer .single-footer-widget {
@@ -3685,7 +3769,7 @@ a:hover {
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #B9CAD9;
+  color: #515154;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container footer h4 {
@@ -3739,7 +3823,7 @@ a:hover {
   }
 }
 .main-container footer ul li a {
-  color: #B9CAD9;
+  color: #515154;
   font-size: 16px;
   margin-bottom: 9px;
   transition: all 0.3s ease;
@@ -3753,7 +3837,7 @@ a:hover {
 }
 .main-container .footer-bottom-bar {
   padding: 20px 0;
-  background-color: #314963;
+  background-color: #F7F7F7;
 }
 .main-container .footer-bottom-bar p, .main-container .footer-bottom-bar span {
   color: #B9CAD9;
