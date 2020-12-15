@@ -3840,20 +3840,33 @@ a:hover {
   background-color: #F7F7F7;
 }
 .main-container .footer-bottom-bar p, .main-container .footer-bottom-bar span {
-  color: #B9CAD9;
-  font-size: 16px;
+  color: #515154;
+  font-size: 14px;
+  text-align: left;
+}
+.main-container .footer-bottom-bar .row a {
+  display: inline-block;
+  color: #515154;
+  margin-left: 10px;
+}
+.main-container .footer-bottom-bar .row a:hover {
+  color: #74B95C;
+}
+.main-container .footer-bottom-bar .row span {
+  margin-left: 10px;
+  margin-right: 20px;
 }
 .main-container .footer-bottom-bar .footer-social-icons a {
+  width: initial;
+  height: initial;
+  border-radius: initial;
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #192A3E;
-  border-radius: 50px;
   text-align: center;
   line-height: 42px;
   color: #B9CAD9;
   margin-left: 10px;
+  align-items: center !important;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -3861,8 +3874,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 .main-container .footer-bottom-bar .footer-social-icons a:hover {
-  background-color: #74B95C;
-  color: #fff;
+  color: #74B95C;
 }
 .main-container .footer-bottom-bar .footer-social-icons a i.fa {
   color: inherit;

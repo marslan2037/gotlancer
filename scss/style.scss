@@ -3792,29 +3792,43 @@ a {
         padding: 20px 0;
         background-color: #F7F7F7;
         p, span {
-            color: #B9CAD9;
-            font-size: 16px;
+            color: #515154;
+            font-size: 14px;
+            text-align: left;
+        }
+        .row {
+            a {
+                display:inline-block;
+                color: #515154;
+                margin-left: 10px;
+                &:hover {
+                    color:#74B95C;
+                }
+            }
+            span {
+                margin-left: 10px;
+                margin-right: 20px;
+            }
         }
         .footer-social-icons {
             a {
+                width: initial;
+                height: initial;
+                border-radius: initial;
                 position: relative;
                 display: inline-block;
-                width: 40px;
-                height: 40px;
-                background-color: #192A3E;
-                border-radius: 50px;
                 text-align: center;
                 line-height: 42px;
                 color: #B9CAD9;
                 margin-left: 10px;
+                align-items: center!important;
                 -webkit-transition: all 0.3s ease;
                 -moz-transition: all 0.3s ease;
                 -ms-transition: all 0.3s ease;
                 -o-transition: all 0.3s ease;
                 transition: all 0.3s ease;
                 &:hover {
-                    background-color: #74B95C;
-                    color: #fff;
+                    color: #74B95C;
                 }
                 i.fa {
                     color: inherit;
